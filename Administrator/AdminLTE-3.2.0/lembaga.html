@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin IT Del | Program Pendidikan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-danger navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown">
+            <i class="fas fa-user"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right user-panel">
+            <span class="dropdown-item dropdown-header">Daniel Siahaan</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-user mr-2"></i> Profile
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-key mr-2"></i>Change Password
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-sign-out-alt mr-2"></i>Logout
+            </a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index3.html" class="brand-link">
+        <img src="dist/img/logo.jpg" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">Institut Teknologi Del</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="dist/img/avatar5.png" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Daniel Siahaan</a>
+          </div>
+        </div>
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <a href="index.html" class="nav-link">
+                <i class="nav-icon fas fa-home"></i>
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pengumuman.html" class="nav-link">
+                <i class="nav-icon fas fa-bell"></i>
+                <p>
+                  Pengumuman
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="programpendidikan.html" class="nav-link ">
+                <i class="nav-icon fas fa-book"></i>
+                <p>Program Pendidikan
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="lembaga.html" class="nav-link active">
+                <i class="nav-icon fas fa-university"></i>
+                <p>
+                  Lembaga
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="fasilitas.html" class="nav-link">
+                <i class="nav-icon fas fa-building "></i>
+                <p>
+                  Fasilitas
+                </p>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-left">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Lembaga</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title font-weight-bold">Data Lembaga IT Del</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Submenu Lembaga</th>
+                        <th>Link</th>
+                        <th>Deskripsi</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="text-align: center;">1</td>
+                        <td>LPPM</td>
+                        <td>--</td>
+                        <td>Lembaga Penelitian dan Pengabdian Masyarakat (LPPM) adalah lembaga yang berada di bawah
+                          Institut Teknologi Del yang mempunyai tugas untuk mengkoordinasikan, memantau, dan menilai
+                          pelaksanaan kegiatan penelitian dan pengabdian kepada masyarakat yang diselenggarakan oleh
+                          LPPM, GBK, Program Studi, kelompok dan perorangan.......</td>
+                        <td>
+                          <a href="#" class="btn btn-warning btn-sm mb-2"><i class="fa fa-edit"></i></a>
+                          <button class="btn btn-danger btn-sm" id="btn-hapus"><i class="fa fa-trash"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;">2</td>
+                        <td>Mitra Kerjasama Dengan IT Del</td>
+                        <td>
+                          <p><a href="http://www.del.ac.id/?page_id=8847">http://www.del.ac.id/?page_id=8847</a></p>
+                        </td>
+                        <td>--</td>
+                        <td>
+                          <a href="#" class="btn btn-warning btn-sm mb-2"><i class="fa fa-edit"></i></a>
+                          <button class="btn btn-danger btn-sm" id="btn-hapus"><i class="fa fa-trash"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;">3</td>
+                        <td>UPT PP-ESTEM</td>
+                        <td>--</td>
+                        <td>A. VISI <br>
+                          Sebagai pusat pengembangan pembelajaran yang unggul dan inovasi secara khusus namun tidak
+                          terbatas pada bidang Sains, Teknologi, Enginering, dan Matematika (STEM) yang berkualitas,
+                          efisien, efektif, produktif, dan akuntabel.</td>
+                        <td>
+                          <a href="#" class="btn btn-warning btn-sm mb-2"><i class="fa fa-edit"></i></a>
+
+                            <button class="btn btn-danger btn-sm" id="btn-hapus"><i class="fa fa-trash"></i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;">3</td>
+                        <td>Pusat Modal Manusia (PMM)</td>
+                        <td>--</td>
+                        <td><strong>PUSAT MODAL MANUSIA (PMM)</strong> <br>
+                          Pusat Modal Manusia berada di bawah dan bertanggung jawab kepada Wakil Rektor Bidang
+                          Perencanaan, Keuangan, dan Sumber Daya.
+                          Tugas pokok Pusat Modal Manusia adalah mengelola modal manusia dalam rangka mewujudkan visi,
+                          misi, dan tujuan institusi.
+                          ......</td>
+                        <td>
+                          <a href="#" class="btn btn-warning btn-sm mb-2"><i class="fa fa-edit"></i></a>
+
+                            <button class="btn btn-danger btn-sm" id="btn-hapus"><i class="fa fa-trash"></i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;">3</td>
+                        <td>Koperasi</td>
+                        <td>--</td>
+                        <td><strong>Sekilas KSU IT Del</strong> <br>
+                          Koperasi Serba Usaha (KSU) IT Del dimulai kembali pada tanggal 8 Agustus 2008 sampai dengan
+                          saat ini, tahun 2014. KSU IT Del didirikan berdasarkan badan hukum dengan No Badan Hukum No :
+                          49.A / BH / KUKM-TS / 2004, per tanggal 7 April 2004. Yang menjadi anggota KSU IT Del adalah
+                          dosen, staff, karyawan dan mahasiswa.......</td>
+                        <td>
+                          <a href="#" class="btn btn-warning btn-sm mb-2"><i class="fa fa-edit"></i></a>
+
+                            <button class="btn btn-danger btn-sm" id="btn-hapus"><i class="fa fa-trash"></i></button>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center;">3</td>
+                        <td>Pusat Bahasa Del</td>
+                        <td>--</td>
+                        <td>The Language Center at Del Institute of Technology provides some programs and services for
+                          English skills development and for documents translations. Services for interpreting is also
+                          provided as requested. <br>
+                          For individual English skills development, it is initially for preparation to sit an English
+                          test either for national or International standard tests. The most wanted English Proficiency
+                          Test, TOEFL institutional test, is provided as requested and also provided every year for a
+                          fix date to the third year students of IT Del......</td>
+                        <td>
+                          <a href="#" class="btn btn-warning btn-sm mb-2"><i class="fa fa-edit"></i></a>
+
+                            <button class="btn btn-danger btn-sm" id="btn-hapus"><i class="fa fa-trash"></i></button>
+                     
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <p style="text-align: center;"><strong>Copyright &copy; 2023 IT Del</a>.</strong>
+        All rights reserved.</p>
+      <div class="float-right d-none d-sm-inline-block">
+      </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- DataTables  & Plugins -->
+  <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="plugins/jszip/jszip.min.js"></script>
+  <script src="plugins/pdfmake/pdfmake.min.js"></script>
+  <script src="plugins/pdfmake/vfs_fonts.js"></script>
+  <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+  <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <!-- <script src="dist/js/demo.js"></script> -->
+  <!-- Page specific script -->
+  <script>
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+      });
+    });
+  </script>
+</body>
+
+</html>
